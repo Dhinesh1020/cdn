@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+
+{% block right_content %}
+    <div>
+        <h3>Inventory of CDN</h3>
+        <p>List of all the distributions available.</p>
+        <h1>Managed CDN Distributions</h1>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Distribution ID</th>
+                <th>Vendor</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in mymembers %}
+                <tr>
+                    <td>{{ item.firstName }}</td>
+                    <td>{{ item.lastName }}</td>
+                    <td>
+                        <a href="{% url 'edit_item' item.firstName %}" class="action-button">Modify</a>
+                        <a href="{% url 'delete_item' item.firstName %}" class="action-button">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    </div>
+{% endblock %}
