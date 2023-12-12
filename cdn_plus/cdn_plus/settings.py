@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
-    'cdn_plus',
-    'django.contrib.gis',
-    'leaflet',
+    'cdn_plus'
     ]
 
 MIDDLEWARE = [
@@ -86,6 +84,7 @@ DATABASES = {
     }
 }
 
+# MAPBOX_KEY = "pk.eyJ1IjoiZGhpbmVzaDEwMjAiLCJhIjoiY2xxMHd1OWhtMDIzajJqbzFjc2p2OHIyMSJ9.DhoEEfGyyIMFBeJ_mu880Q"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

@@ -34,12 +34,13 @@ nav a {
     color: white;
     text-align: left;
     padding: 20px 0; /* Adjust the padding as needed */
-    text-decoration: none;
+    text-decoration: none !important;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: #273746; /* Slightly darker shade on hover */
+    text-decoration: none !important;
 }
 
 /* Add a gradient effect to the navbar */
@@ -130,70 +131,8 @@ nav {
     background-color: #2980b9;
 }
 
-/* styles.css */
-/* ... other styles ... */
-
-/* .form-container {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.form-input,
-.form-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.form-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.form-button:hover {
-    background-color: #2980b9;
-} */
-
-/* ... other styles ... */
-
-/* styles.css */
-
-/* ... other styles ... */
-
 .form-container {
-    max-width: 400px;
-    margin: 20px auto;
+    width: 150vh;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -202,7 +141,7 @@ nav {
 }
 
 .form-container:hover {
-    transform: scale(1.05);
+  /* ...  transform: scale(1.05); ... */
 }
 
 .form-group {
@@ -272,30 +211,6 @@ nav {
     color: #333;
 }
 
-/* ... other styles ... */
-
-
-/* styles.css */
-
-/* ... other styles ... */
-
-/* .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline-block;
-    position: relative;
-}
-
-.navbar a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333;
-} */
 
 .carousel {
     display: none;
@@ -314,3 +229,84 @@ nav {
     display: block;
 }
 /* ... other styles ... */
+
+.map {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-image: url('world-map.png');
+    background-size: cover;
+}
+
+.marker-canada{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    left: 190px;
+    top: 136px;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+}
+
+.marker-usa{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    left: 217px;
+    top: 230px;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+}
+/* Add more styles and positions for other countries as needed */
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* .tab-button {
+    padding: 13px;
+    width: 75vh;
+    cursor: pointer;
+    background-color: #3487db;
+    color: white;
+    border: none;
+} */
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #2980b9;
+}

@@ -5,6 +5,7 @@ from cdn_plus.models import DBTable
 from django.contrib import messages
 from .forms import CdnForm
 from django.views import View
+from django.shortcuts import render
 
 # Create your views here.
 
@@ -25,6 +26,18 @@ def inventory(request):
         "mymembers": users
     }
     return HttpResponse(template.render(context, request))
+
+def show_map(request):
+    # users = DBTable.objects.all().values()
+    template = loader.get_template('map.html')
+    
+    return HttpResponse(template.render())
+
+def multi_form(request):
+    # users = DBTable.objects.all().values()
+    template = loader.get_template('tab_form.html')
+    
+    return HttpResponse(template.render())
 
 def dashboard(request):
     template = loader.get_template('dashboard.html')

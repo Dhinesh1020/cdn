@@ -17,6 +17,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="{% static 'cdn_plus/js/dashboard.js' %}"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
     
 </head>
 <body>
@@ -29,10 +31,11 @@
     <div class="wrapper">
     <nav>
         <ul>
-            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
-            <li><a href="{% url 'inventory' %}">Inventory</a></li>
-            <li><a href="{% url 'dns' %}">DNS Requests</a></li>
-            <li><a href="{% url 'distribution' %}">Create CDN Distribution</a></li>
+            <b><li><a href="{% url 'dashboard' %}">Dashboard</a></li></b>
+            <b><li><a href="{% url 'inventory' %}">Inventory</a></li></b>
+            <b><li><a href="{% url 'dns' %}">DNS Requests</a></li></b>
+            <b><li><a href="{% url 'distribution' %}">Create CDN Distribution</a></li></b>
+            <b><li><a href="{% url 'map' %}">Show Distribution Map</a></li></b>
             <!-- Add more navbar items as needed -->
         </ul>
     </nav>

@@ -9,4 +9,6 @@ urlpatterns = [
     path('dns/', views.dns, name='dns'),
     path('distribution/', views.DistributionView.as_view(), name='distribution'),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('map/', views.show_map, name='map'),
+    path('tab/', views.multi_form, name='tab_form')
 ]

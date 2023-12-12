@@ -24,3 +24,27 @@ $(document).ready(function() {
         $(this).find('.submenu').toggle();
     });
 });
+
+
+function highlightCountry() {
+    const markers = document.querySelectorAll('.marker');
+
+    markers.forEach(marker => {
+        marker.style.backgroundColor = 'red';
+    });
+}
+
+
+function openForm(formName) {
+    // Hide all forms
+    const forms = document.querySelectorAll('.form');
+    forms.forEach(form => {
+        form.style.display = 'none';
+    });
+
+    // Show the selected form
+    const selectedForm = document.getElementById(formName);
+    if (selectedForm) {
+        selectedForm.style.display = 'block';
+    }
+}
